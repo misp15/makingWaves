@@ -1,0 +1,9 @@
+﻿@model List<Color>
+@{
+    ViewData["Title"] = "ColorPage";
+}
+
+@foreach (var i in Model)
+{
+        <h1 style="background:@i.ColorHex;"> Group: @i.Group, Id: @i.Id, Pantone_Value: @i.PantoneValue,Year: @i.Year</h1>
+}

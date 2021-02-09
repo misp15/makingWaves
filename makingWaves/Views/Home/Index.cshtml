@@ -1,0 +1,32 @@
+﻿@{ ViewData["Title"] = "Home Page";}
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Making Waves code test.</p>
+</div>
+<div class="text-left">
+    <p>The following document lists the requirements for a test where colors are fetched from an online API and grouped according to a described ruleset.</p>
+
+    <p>Fetch all pages of items from the following JSON endpoint, and merge them into one list.</p>
+
+    <p>https://reqres.in/api/example?per_page=2&page=1</p>
+
+    <p>Use the “page” querystring to fetch a specific page. Do not remove or change the “per_page” parameter.</p>
+
+    <p>The list should be divided into three new lists based on the following rules:</p>
+
+    <ul>
+        <li><strong>Group 1:</strong> Based on the first part of the “pantone_value” field (e.g. “17" of “17-4587”). If this value is divisible by 3 (with no remainders) then the item should be included in this group.</li>
+        <li><strong>Group 2:</strong> Based on the first part of the “pantone_value” field (e.g. “17” of “17-4587"). If this value is divisible by 2 (with no remainders) AND it is not included in group 1 then the item should be included in this group.</li>
+        <li><strong>Group 3:</strong> Include any items that does not fit the criteria of group 1 or 2.</li>
+        <li>Present the three lists sorted by the “year” field.</li>
+    </ul>
+    <p>Note:</p>
+    <ul>
+        <li>The solution should be built using ASP.NET MVC.</li>
+        <li>Choose any fitting presentation layer that can visualize the data. The UI does not need to be beautiful.</li>
+        <li>Push the source code to your own private Git repository or ask us to create a repo for you in our Github organization</li>
+        <li>The task is designed to take at max a few hours of your time, do not feel pressured to spend more time than this on architecture and design.</li>
+    </ul>
+</div>
