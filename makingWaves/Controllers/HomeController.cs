@@ -68,10 +68,9 @@ namespace makingWaves.Controllers
                    
             }
             //concant groupOne and group list. Sort by group 123 and year ASC
-            var FinishedGroup = GroupOne.Concat(Group).ToList();
-            var SortedGroup = FinishedGroup.OrderBy(x => x.Group ).ThenBy(e => e.Year).ToList();
+            var FinishedGroup = GroupOne.Concat(Group).OrderBy(x => x.Group).ThenBy(e => e.Year).ToList();
 
-            return SortedGroup;
+            return FinishedGroup;
         }
         static async Task<ColorModel> GetProductAsync(string path)
         {
